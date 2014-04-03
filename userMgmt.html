@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>yourChoice</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+</head>
+<body>
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="navbar-header">
+					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+					 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span>
+					 <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">yourChoice</a>
+				</div>
+				
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="playground.html">yourChoice playground</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="index.html">Get out!</a>
+						</li>
+					</ul>
+				</div>
+				
+			</nav>
+			<h3>
+				User management site
+			</h3>
+			<p>
+				This displays the default page after a user selects the menu user management.
+				<br />
+				He can choose between different options from the following menu. 				
+			</p>
+						
+			<div class="row clearfix">
+				<div class="col-md-12 column">
+					<div class="row clearfix">
+						<div class="col-md-12 column">
+							<div class="panel-group" id="panel-631947">
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485292">Statistics</a>
+									</div>
+									<div id="panel-element-485292" class="panel-collapse collapse">
+										<div class="panel-body">
+											Show me my ranking, highscores and everything...
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485291">Change user data</a>
+									</div>
+									<div id="panel-element-485291" class="panel-collapse collapse">
+										<div class="panel-body">
+										<p>You can change your private data here.</p>
+										
+											<form role="form">
+											<div class="form-group">
+											    <label for="exampleInputEmail1">First name</label>
+											    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter first name">
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputPassword1">Last name</label>
+											    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter last name">
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputEmail1">Email address</label>
+											    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputPassword1">Password</label>
+											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+											  </div>
+											  <div class="form-group">
+											  </div>
+											  <button type="button" class="btn btn-default btn-block">Save</button>
+											</form>
+
+										</div>
+									</div>
+								</div>
+								<div class="panel panel-default">
+									<div class="panel-heading">
+										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676443">Delete user account</a>
+									</div>
+									<div id="panel-element-676443" class="panel-collapse collapse">
+										<div class="panel-body">
+											<p>By pressing the button below, you will be gone forever.</p>
+											<button type="button" id="loading-example-btn" class="btn btn-danger btn-block">
+											  Delete everything.
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<div id="footer">
+	<hr>
+	   <div class="container">
+	     <p class="text-muted">(c) group 3 | <a class="text-muted" href="#">impressum.</a></p>
+	   </div>
+	 </div>
+</div>
+
+
+
+</body>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  
+  <!-- Bootstrap JS file -->
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-1.5.0.js"></script>
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+</html>
