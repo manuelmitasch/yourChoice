@@ -29,7 +29,7 @@
 							<a href="questionMgmt.html">question management</a>
 						</li>
 						<li>
-							<a href="quizMgmt.html">quiz management</a>
+							<a href="userMgmt.html">user management</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
@@ -40,13 +40,14 @@
 				</div>
 				
 			</nav>
+			
 			<h3>
-				User management 
+				Quiz management
 			</h3>
 			<p>
-				This displays the default page after a user selects the menu user management.
+				This displays the default page for the quiz management section.
 				<br />
-				He can choose between different options from the following menu. 				
+				You can configure your school classes or exams here.  				
 			</p>
 						
 			<div class="row clearfix">
@@ -56,38 +57,53 @@
 							<div class="panel-group" id="panel-631947">
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485292">Configure classes</a>
+										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485292">Configure exams</a>
 									</div>
 									<div id="panel-element-485292" class="panel-collapse collapse">
 										<div class="panel-body">
-										<p>You can configure your classes here.</p>
-										<form role="form">
-											<div class="form-group">
-												<label for="exampleInputEmail1">Class name</label>
-											    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter name">
-											</div>
-											<div class="form-group">
-												<label for="exampleSection">Select your students:</label>
-												<select multiple class="form-control">
-												  <option>Manuel</option>
-												  <option>Sabrina</option>
-												  <option>Andreas</option>
-												  <option>Christian</option>
-												  <option>Unknown student nr. 5</option>
-												</select>
-											</div>
-											  <button type="button" class="btn btn-info btn-block">Save</button>
-											</form>
+											You can create or edit your exams here.
 										</div>
 									</div>
 								</div>
 								<div class="panel panel-default">
 									<div class="panel-heading">
-										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485291">Show class statistics</a>
+										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485291">Configure learning lessons</a>
 									</div>
 									<div id="panel-element-485291" class="panel-collapse collapse">
 										<div class="panel-body">
-										<p>You can see your class statistics here.</p>
+										<p>You can create and combine your learning sessions here.</p>
+										
+											<form role="form">
+											<div class="form-group">
+											    <label for="exampleInputEmail1">Select a quiz</label>
+										    	<select class="form-control">
+												  <option>Quiz 1</option>
+												  <option>Quiz 2</option>
+												  <option>Quiz 3</option>
+												</select>
+											  </div>
+											  <div class="form-group">
+											    <label for="exampleInputPassword1">Select your students</label>
+											    <select multiple class="form-control">
+												  <option>Class 1</option>
+												  <option>Class 2</option>
+												  <option>Class 3</option>
+												  <option>Class 4</option>
+												  <option>Class 5</option>
+												</select>
+											  </div>
+											  <div class="form-group">
+											    <div class="checkbox">
+												  <label>
+												    <input type="checkbox" value="">
+												    Re-take exam. It's possibly to try the quiz multiple times.
+												   </label>
+												</div>
+											  </div>
+											  <div class="form-group">
+											  </div>
+											  <button type="button" class="btn btn-info btn-block">Save</button>
+											</form>
 										</div>
 									</div>
 								</div>
