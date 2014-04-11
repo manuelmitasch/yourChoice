@@ -1,0 +1,11 @@
+@CHARSET "UTF-8";
+body {
+/*  background-image: url('images/stockholm.jpg'); */
+ background-repeat:no-repeat;
+ display: compact;
+}
+
+.row-buffer20 { margin-top:20px; }
+.row-buffer40 { margin-top:40px; }
+.row-buffer80 { margin-top:80px; }
+

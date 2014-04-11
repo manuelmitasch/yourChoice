@@ -17,7 +17,7 @@
 				<div class="navbar-header">
 					 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
 					 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span>
-					 <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">yourChoice</a>
+					 <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">myChoice</a>
 				</div>
 				
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -34,83 +34,106 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li>
-							<a href="index.html">Get out!</a>
+							<a href="userProfile.html">Hi, Andreas!</a>
 						</li>
 					</ul>
 				</div>
 				
 			</nav>
 			<h3>
-				yourChoice playground!
+				myChoice playground!
 			</h3>
 			<p>
-				Welcome to yourChoice playground, where you can try out all the possiblities of our app. 
+				Welcome to yourChoice playground, where you see all open quiz sessions. 
 				<br />
-				Just pick one option from the menu! 
+				You can start them by clicking on the related button.
 			</p>
 						
 			<div class="row clearfix">
 				<div class="col-md-12 column">
 					<div class="row clearfix">
 						<div class="col-md-12 column">
-							<div class="panel-group" id="panel-631947">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485291">2-player match</a>
-									</div>
-									<div id="panel-element-485291" class="panel-collapse collapse">
-										<div class="panel-body">
-											<p>You can select on of your classmates or a random person to play against.</p>
-											<form action="twoplayer.html">
-											<button type="submit" class="btn btn-info btn-block">
-											  Select an opponment 
-											</button>
-											</form>
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676443">I wanna learn..</a>
-									</div>
-									<div id="panel-element-676443" class="panel-collapse collapse">
-										<div class="panel-body">
-											<p>Just pick one of the provided categories to study and learn the included questions.</p>
-											<select class="form-control">
-											  <option>Languages</option>
-											  <option>Culture</option>
-											  <option>History</option>
-											</select>
-											<br/>
-											<button type="button" id="loading-example-btn" class="btn btn-info btn-block">
-											  Start learning.
-											</button>
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676444">Exams</a>
-									</div>
-									<div id="panel-element-676444" class="panel-collapse collapse">
-										<div class="panel-body">
-											<p>You are registered to the following exams as provided below.</p>
-											<select class="form-control">
-											  <option>KV Service Engineering</option>
-											  <option>Softwareentwicklung 1</option>
-											  <option>Soziale Auswirkungen der Wirtschaftsinformatik</option>
-											</select>
-											<br/>
-											<form action="exam.html">
-											<button type="submit" id="loading-example-btn" class="btn btn-info btn-block">
-											  Start the examination.
-											</button>
-											</form>
-										</div>
-									</div>
-								</div>								
+						
+						
+							<ul class="nav nav-tabs" style="margin-bottom: 15px;">
+							  <li class="active"><a href="#home" data-toggle="tab">Active Sessions</a></li>
+							  <li class=""><a href="#profile" data-toggle="tab">Upcoming Sessions</a></li>
+							  <li class=""><a href="#prevSessions" data-toggle="tab">Previous Sessions</a></li>
+							</ul>
+							<div id="myTabContent" class="tab-content">
+							  <div class="tab-pane fade active in" id="home">
+							  	<p>Showing all active sessions.</p>
+							  </div>
+							  <div class="tab-pane fade" id="profile">
+							  	<p>Showing all upcoming sessions.</p>
+							  </div>
+							  <div class="tab-pane fade" id="prevSessions">
+							  	<p>Showing all previous sessions.</p>
+							  </div>
 							</div>
+							
 						</div>
+										
+					
+<!-- 						<div class="col-md-12 column"> -->
+<!-- 							<div class="panel-group" id="panel-631947"> -->
+<!-- 								<div class="panel panel-default"> -->
+<!-- 									<div class="panel-heading"> -->
+<!-- 										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485291">2-player match</a> -->
+<!-- 									</div> -->
+<!-- 									<div id="panel-element-485291" class="panel-collapse collapse"> -->
+<!-- 										<div class="panel-body"> -->
+<!-- 											<p>You can select on of your classmates or a random person to play against.</p> -->
+<!-- 											<form action="twoplayer.html"> -->
+<!-- 											<button type="submit" class="btn btn-info btn-block"> -->
+<!-- 											  Select an opponment  -->
+<!-- 											</button> -->
+<!-- 											</form> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
+<!-- 								<div class="panel panel-default"> -->
+<!-- 									<div class="panel-heading"> -->
+<!-- 										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676443">I wanna learn..</a> -->
+<!-- 									</div> -->
+<!-- 									<div id="panel-element-676443" class="panel-collapse collapse"> -->
+<!-- 										<div class="panel-body"> -->
+<!-- 											<p>Just pick one of the provided categories to study and learn the included questions.</p> -->
+<!-- 											<select class="form-control"> -->
+<!-- 											  <option>Languages</option> -->
+<!-- 											  <option>Culture</option> -->
+<!-- 											  <option>History</option> -->
+<!-- 											</select> -->
+<!-- 											<br/> -->
+<!-- 											<button type="button" id="loading-example-btn" class="btn btn-info btn-block"> -->
+<!-- 											  Start learning. -->
+<!-- 											</button> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<!-- 								</div> -->
+<!-- 								<div class="panel panel-default"> -->
+<!-- 									<div class="panel-heading"> -->
+<!-- 										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676444">Exams</a> -->
+<!-- 									</div> -->
+<!-- 									<div id="panel-element-676444" class="panel-collapse collapse"> -->
+<!-- 										<div class="panel-body"> -->
+<!-- 											<p>You are registered to the following exams as provided below.</p> -->
+<!-- 											<select class="form-control"> -->
+<!-- 											  <option>KV Service Engineering</option> -->
+<!-- 											  <option>Softwareentwicklung 1</option> -->
+<!-- 											  <option>Soziale Auswirkungen der Wirtschaftsinformatik</option> -->
+<!-- 											</select> -->
+<!-- 											<br/> -->
+<!-- 											<form action="exam.html"> -->
+<!-- 											<button type="submit" id="loading-example-btn" class="btn btn-info btn-block"> -->
+<!-- 											  Start the examination. -->
+<!-- 											</button> -->
+<!-- 											</form> -->
+<!-- 										</div> -->
+<!-- 									</div> -->
+<!-- 								</div>								 -->
+<!-- 							</div> -->
+<!-- 						</div> -->
 					</div>
 				</div>
 			
@@ -121,8 +144,7 @@
 	<div id="footer">
 	<hr>
 	   <div class="container">
-	     <p class="text-muted">(c) group 3 | <a class="text-muted" href="#">impressum.</a>
-	     | logged in as: <a href="userProfile.html">student andreas.</a>
+	     <a class="text-muted" href="#">impressum.</a>
 	     </p>
 	   </div>
 	 </div>
