@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/myChoiceStyle.css">
 </head>
 <body>
 
@@ -23,94 +24,145 @@
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav">
 						<li>
-							<a href="playground.html">yourChoice playground</a>
+							<a href="sessions.html">Sessions</a>
 						</li>
 						<li>
-							<a href="questionMgmt.html">question management</a>
-						</li>
-						<li>
-							<a href="quizMgmt.html">quiz management</a>
+							<a href="quizzes.html">Quiz list</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="index.html">Get out!</a>
-						</li>
+						<li class="dropdown">
+					        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, Andreas!<b class="caret"></b></a>
+					        <ul class="dropdown-menu">
+					          <li><a href="userProfile.html">User profile</a></li>
+					          <li><a href="index.html">Logout</a></li>
+					        </ul>
+					      </li>
 					</ul>
 				</div>
 				
 			</nav>
 			<h3>
-				User management 
+				Your user profile, <strong>Andreas.</strong>
 			</h3>
 			<p>
-				This displays the default page after a user selects the menu user management.
-				<br />
-				He can choose between different options from the following menu. 				
+				Welcome to your private user profile.<br />
+				You can change your private data here or see your quiz results.
 			</p>
-						
+			
+			<div class="row-buffer30"></div>
+									
 			<div class="row clearfix">
 				<div class="col-md-12 column">
 					<div class="row clearfix">
 						<div class="col-md-12 column">
-							<div class="panel-group" id="panel-631947">
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485292">Statistics</a>
-									</div>
-									<div id="panel-element-485292" class="panel-collapse collapse">
-										<div class="panel-body">
-											Show me my ranking, highscores and everything of my attended quizzes.
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485291">Change user data</a>
-									</div>
-									<div id="panel-element-485291" class="panel-collapse collapse">
-										<div class="panel-body">
-										<p>You can change your private data here.</p>
-										
-											<form role="form">
-											<div class="form-group">
-											    <label for="exampleInputEmail1">First name</label>
-											    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter first name">
-											  </div>
-											  <div class="form-group">
-											    <label for="exampleInputPassword1">Last name</label>
-											    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter last name">
-											  </div>
-											  <div class="form-group">
-											    <label for="exampleInputEmail1">Email address</label>
-											    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-											  </div>
-											  <div class="form-group">
-											    <label for="exampleInputPassword1">Password</label>
-											    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-											  </div>
-											  <div class="form-group">
-											  </div>
-											  <button type="button" class="btn btn-info btn-block">Save</button>
-											</form>
-
-										</div>
-									</div>
-								</div>
-								<div class="panel panel-default">
-									<div class="panel-heading">
-										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676443">Delete user account</a>
-									</div>
-									<div id="panel-element-676443" class="panel-collapse collapse">
-										<div class="panel-body">
-											<p>By pressing the button below, you will be gone.</p>
-											<button type="button" id="loading-example-btn" class="btn btn-danger btn-block">
-											  Delete everything.
-											</button>
-										</div>
-									</div>
-								</div>
-							</div>
+						
+						<div class="panel-group" id="accordion">
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#resultOverview">
+						          Result overview
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="resultOverview" class="panel-collapse collapse">
+						      <div class="panel-body">
+						      <p>You participated in the following quizzes: </p>
+								<div class="table-responsive">
+								  <table class="table table-hover table-condensed">
+								  <thead>
+								    <tr>
+								      <th>#</th>
+								      <th>Quiz name</th>
+								      <th>Type</th>
+								      <th>Options</th>
+								    </tr>
+								  </thead>
+									  <tbody>
+									    <tr>
+									      <td>1</td>
+									      <td>Session name</td>
+									      <td>Study</td>
+									      <td><button type="button" class="btn btn-link btn-sm btn-no-padding">Show detailed statistics</button></td>
+									    </tr>
+									    <tr>
+									      <td>2</td>
+									      <td>Session name</td>
+									      <td>Exam</td>
+									      <td><button type="button" class="btn btn-link btn-sm btn-no-padding">Show detailed statistics</button></td>
+									    </tr>
+									  </tr>
+									   <tr>
+									      <td>3</td>
+									      <td>Session name</td>
+									      <td>Quiz</td>
+									      <td><button type="button" class="btn btn-link btn-sm btn-no-padding">Show detailed statistics</button></td>
+									    </tr>
+									  </tr>
+									 </tbody>
+									</table>
+								  </div>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#userProfile">
+						          Profile data
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="userProfile" class="panel-collapse collapse">
+						      <div class="panel-body">
+						      <p>You can change your private data here.</p>
+								<form role="form">
+								<div class="form-group">
+								    <label for="exampleInputEmail1">First name</label>
+								    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter first name">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInputPassword1">Last name</label>
+								    <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter last name">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInputEmail1">Email address</label>
+								    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInputPassword1">Current password</label>
+								    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Enter current password">
+								  </div>
+								  <div class="form-group">
+								    <label for="exampleInputPassword1">New password</label>
+								    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+								  </div>
+								  <div class="form-group">
+								  </div>
+								  <button type="button" class="btn btn-info btn-block">Submit and Save</button>
+								</form>
+						      </div>
+						    </div>
+						  </div>
+						  <div class="panel panel-default">
+						    <div class="panel-heading">
+						      <h4 class="panel-title">
+						        <a data-toggle="collapse" data-parent="#accordion" href="#deleteUserAccount">
+						          Delete user account
+						        </a>
+						      </h4>
+						    </div>
+						    <div id="deleteUserAccount" class="panel-collapse collapse">
+						      <div class="panel-body">
+					      		<p>By pressing the button below, your user account will be gone.</p>
+									<button type="button" id="loading-example-btn" class="btn btn-danger btn-block">
+									  Delete everything.
+									</button>
+						      </div>
+						    </div>
+						  </div>
+						</div>
 						</div>
 					</div>
 				</div>
@@ -121,7 +173,7 @@
 	<div id="footer">
 	<hr>
 	   <div class="container">
-	     <a class="text-muted" href="#">impressum.</a>
+	     <a class="text-muted" href="impressum.html">impressum.</a>
 	   </div>
 	 </div>
 </div>

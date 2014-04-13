@@ -27,13 +27,17 @@
 							<a href="sessions.html">Sessions</a>
 						</li>
 						<li>
-							<a href="quizzes.html">Quizzes</a>
+							<a href="quizzes.html">Quiz list</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
-						<li>
-							<a href="userProfile.html">Hi, Andreas!</a>
-						</li>
+						<li class="dropdown">
+					        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, Andreas!<b class="caret"></b></a>
+					        <ul class="dropdown-menu">
+					          <li><a href="userProfile.html">User profile</a></li>
+					          <li><a href="index.html">Logout</a></li>
+					        </ul>
+					      </li>
 					</ul>
 				</div>
 				
@@ -72,7 +76,7 @@
 							  <div class="tab-pane fade active in" id="activeSessions">
 							  <div class="container">
 								<p>Select one of the following sessions to beginn with:</p>
-								  <div class="table-responsive">
+								  <div class="table-responsive table-half">
 								  <table class="table table-hover table-condensed">
 									  <tbody>
 									    <tr>
@@ -105,7 +109,7 @@
 							  
 							  	<div class="container">
 							  	<p>The following sessions are coming soon:</p>
-								  <div class="table-responsive">
+								  <div class="table-responsive table-half">
 								  <table class="table table-hover table-condensed">
 									  <tbody>
 									    <tr>
@@ -138,7 +142,7 @@
 							  
 								  <div class="container">
 								  	<p>You can edit your own sessions here:
-									  <div class="table-responsive">
+									  <div class="table-responsive table-half">
 									  <table class="table table-hover table-condensed">
 										  <tbody>
 										    <tr>
@@ -174,7 +178,7 @@
 									<div class="container">
 								  		<p>The following sessions have already been attended.
 								  		You can try them again, if you like.</p>
-								  		<div class="table-responsive">
+								  		<div class="table-responsive table-half">
 									  <table class="table table-hover table-condensed">
 										  <tbody>
 										    <tr>
@@ -207,66 +211,6 @@
 								
 						</div>
 										
-					
-<!-- 						<div class="col-md-12 column"> -->
-<!-- 							<div class="panel-group" id="panel-631947"> -->
-<!-- 								<div class="panel panel-default"> -->
-<!-- 									<div class="panel-heading"> -->
-<!-- 										 <a class="panel-title collapsed" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-485291">2-player match</a> -->
-<!-- 									</div> -->
-<!-- 									<div id="panel-element-485291" class="panel-collapse collapse"> -->
-<!-- 										<div class="panel-body"> -->
-<!-- 											<p>You can select on of your classmates or a random person to play against.</p> -->
-<!-- 											<form action="twoplayer.html"> -->
-<!-- 											<button type="submit" class="btn btn-info btn-block"> -->
-<!-- 											  Select an opponment  -->
-<!-- 											</button> -->
-<!-- 											</form> -->
-<!-- 										</div> -->
-<!-- 									</div> -->
-<!-- 								</div> -->
-<!-- 								<div class="panel panel-default"> -->
-<!-- 									<div class="panel-heading"> -->
-<!-- 										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676443">I wanna learn..</a> -->
-<!-- 									</div> -->
-<!-- 									<div id="panel-element-676443" class="panel-collapse collapse"> -->
-<!-- 										<div class="panel-body"> -->
-<!-- 											<p>Just pick one of the provided categories to study and learn the included questions.</p> -->
-<!-- 											<select class="form-control"> -->
-<!-- 											  <option>Languages</option> -->
-<!-- 											  <option>Culture</option> -->
-<!-- 											  <option>History</option> -->
-<!-- 											</select> -->
-<!-- 											<br/> -->
-<!-- 											<button type="button" id="loading-example-btn" class="btn btn-info btn-block"> -->
-<!-- 											  Start learning. -->
-<!-- 											</button> -->
-<!-- 										</div> -->
-<!-- 									</div> -->
-<!-- 								</div> -->
-<!-- 								<div class="panel panel-default"> -->
-<!-- 									<div class="panel-heading"> -->
-<!-- 										 <a class="panel-title" data-toggle="collapse" data-parent="#panel-631947" href="#panel-element-676444">Exams</a> -->
-<!-- 									</div> -->
-<!-- 									<div id="panel-element-676444" class="panel-collapse collapse"> -->
-<!-- 										<div class="panel-body"> -->
-<!-- 											<p>You are registered to the following exams as provided below.</p> -->
-<!-- 											<select class="form-control"> -->
-<!-- 											  <option>KV Service Engineering</option> -->
-<!-- 											  <option>Softwareentwicklung 1</option> -->
-<!-- 											  <option>Soziale Auswirkungen der Wirtschaftsinformatik</option> -->
-<!-- 											</select> -->
-<!-- 											<br/> -->
-<!-- 											<form action="exam.html"> -->
-<!-- 											<button type="submit" id="loading-example-btn" class="btn btn-info btn-block"> -->
-<!-- 											  Start the examination. -->
-<!-- 											</button> -->
-<!-- 											</form> -->
-<!-- 										</div> -->
-<!-- 									</div> -->
-<!-- 								</div>								 -->
-<!-- 							</div> -->
-<!-- 						</div> -->
 					</div>
 				</div>
 			
@@ -277,7 +221,7 @@
 	<div id="footer">
 	<hr>
 	   <div class="container">
-	     <a class="text-muted" href="#">impressum.</a>
+	     <a class="text-muted" href="impressum.html">impressum.</a>
 	     </p>
 	   </div>
 	 </div>

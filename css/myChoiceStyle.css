@@ -14,6 +14,12 @@ body {
 	padding:0px;
 }
 
-.table{
+.table-half{
 	width:50%;
+}
+
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
 }
