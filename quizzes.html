@@ -54,7 +54,7 @@
 					You can play them directly or use them for a session.
 				</p>
 				</div>
-	 			<div class="col-xs-6 col-md-6"><button type="button" class="btn btn-primary pull-right">Create a new quiz.</button></div>
+	 			<div class="col-xs-6 col-md-6"><button type="button" class="btn btn-primary pull-right btn-create-quiz"><span class="glyphicon glyphicon-plus"></span> Create a new quiz.</button></div>
  			</div>
 			
 			<div class="row-buffer30"></div>
@@ -151,4 +151,12 @@
   <script src="js/app.js"></script>
   <!-- to activate the test runner, add the "?test" query string parameter -->
   <script src="tests/runner.js"></script>
+
+  <script>
+ 		$(document).ready(function() {
+ 			$(".btn-create-quiz").on("click", function() {
+ 				location.href = 'quizNew.html'
+ 			});
+ 		});
+  </script>
 </html>

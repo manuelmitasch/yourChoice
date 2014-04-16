@@ -3,6 +3,7 @@ body {
 /*  background-image: url('images/stockholm.jpg'); */
  background-repeat:no-repeat;
  display: compact;
+ padding-top: 40px;
 }
 
 .row-buffer20 { margin-top:20px; }
@@ -22,4 +23,17 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	float: none;
+}
+
+.add-choice .dropdown-toggle {
+  height: 30px;
+  border-left: 1px solid rgb(255, 255, 255);
+}
+
+.add-choice {
+  margin-top: 10px;
+}
+
+.panel-group .edit-section {
+  overflow: visible;
 }

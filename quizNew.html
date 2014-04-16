@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>yourChoice</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.css">
+  <link rel="stylesheet" href="css/myChoiceStyle.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+       <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span>
+       <span class="icon-bar"></span></button> <a class="navbar-brand" href="#">myChoice</a>
+    </div>
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="sessions.html">Sessions</a>
+        </li>
+        <li>
+          <a href="quizzes.html">Quiz list</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Hi, Andreas!<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="userProfile.html">User profile</a></li>
+                <li><a href="index.html">Logout</a></li>
+              </ul>
+            </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+	<div class="row clearfix">
+		<div class="col-md-12 column">
+			<h1>Create quiz</h1>
+        
+      <form class="form-horizontal">
+        <div class="well bs-component">
+          <fieldset>
+            <legend>General</legend>
+
+            <div class="row">
+              <div class="col-lg-7">
+
+                <div class="form-group">
+                  <label for="name" class="col-lg-2 control-label">Name</label>
+                  <div class="col-lg-10">
+                    <input type="text" class="form-control" id="name" placeholder="Quiz name">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="description" class="col-lg-2 control-label">Description</label>
+                  <div class="col-lg-10">
+                    <textarea class="form-control" rows="3" id="description" placeholder="Description"></textarea>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="select" class="col-lg-2 control-label">Tags</label>
+                  <div class="col-lg-10">
+                    <select multiple="" class="form-control" rows="3">
+                      <option>Learn</option>
+                      <option>Exam</option>
+                      <option>Quiz</option>
+                    </select>
+                  </div>
+                </div>
+
+              </div>
+
+              <div class="col-lg-4 col-lg-offset-1">
+                <div class="form-group">
+                  <label class="col-lg-6 control-label">Use Points?</label>
+                  <div class="col-lg-6">
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="points" value="percentage" checked="">
+                        Percentage
+                      </label>
+                    </div>
+                    <div class="radio">
+                      <label>
+                        <input type="radio" name="points" value="points">
+                        Points
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-lg-6 control-label">Random order?</label>
+                  <div class="col-lg-6">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Yes
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-lg-6 control-label">Make it public?</label>
+                  <div class="col-lg-6">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" checked=""> Yes
+                      </label>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label class="col-lg-6 control-label">Give immediate feedback?</label>
+                  <div class="col-lg-6">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox"> Yes
+                      </label>
+                    </div>
+                  </div>
+                </div>  
+
+              </div>
+            </div>
+          </fieldset>
+        </div>
+
+        <div class="well bs-component">
+          <legend>Sections</legend>
+
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                    Section #1
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in">
+                <div class="panel-body">
+                  
+                  <div class="form-group">
+                    <label for="name" class="col-lg-2 control-label">Name</label>
+                    <div class="col-lg-10">
+                      <input type="text" class="form-control" id="name" placeholder="Section name">
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="description" class="col-lg-2 control-label">Description</label>
+                    <div class="col-lg-10">
+                      <textarea class="form-control" rows="2" id="description" placeholder="Description"></textarea>
+                    </div>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="name" class="col-lg-2 control-label">Questions</label>
+                    <div class="col-lg-10">
+    
+                      <div class="panel-group" id="questions-section1">
+                        <div class="panel panel-default edit-section">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#questions-section1" href="#questions-section1-one">
+                                What is the question 1?
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="questions-section1-one" class="panel-collapse collapse in">
+                            <div class="panel-body">
+
+                              <div class="form-group">
+                                <label for="name" class="col-lg-2 control-label">Question</label>
+                                <div class="col-lg-10">
+                                  <input type="text" class="form-control" id="name" placeholder="What is the question?">
+                                </div>
+                              </div>
+
+                              <div class="form-group">
+                                <label for="name" class="col-lg-2 control-label">Choices</label>
+                                <div class="col-lg-10">
+                                  
+                                  <div class="input-group">
+                                    <span class="input-group-addon">
+                                      <input type="checkbox" checked="">
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Answer 1">
+                                  </div><!-- /input-group -->
+
+                                  <div class="input-group">
+                                    <span class="input-group-addon">
+                                      <input type="checkbox">
+                                    </span>
+                                    <input type="text" class="form-control" placeholder="Answer 2">
+                                  </div><!-- /input-group -->
+
+                                  <div class="btn-group btn-group-sm add-choice">
+                                    <button type="button" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Add choice</button>
+                                    <button type="button" class="btn btn-primary dropdown-toggle " data-toggle="dropdown">
+                                      <span class="caret"></span>
+                                      <span class="sr-only">Toggle Dropdown</span>
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                      <li><a href="#">Standard</a></li>
+                                      <li><a href="#">Text</a></li>
+                                      <li><a href="#">Image</a></li>
+                                      <li><a href="#">Drag&amp;Drop</a></li>
+                                    </ul>
+                                  </div>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="panel panel-default">
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#questions-section1" href="#questions-section1-two">
+                                Why is question 2 sooooo hard?
+                              </a>
+                            </h4>
+                          </div>
+                          <div id="questions-section1-two" class="panel-collapse collapse">
+                            <div class="panel-body">
+                              Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                            </div>
+                          </div>
+                        </div>
+                      </div>    
+
+                      <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span> Add question</button>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                    Section #2
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                    Section #3
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse">
+                <div class="panel-body">
+                  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn-primary btn-sm"><span class="glyphicon glyphicon-plus"></span> Add section</button>
+        </div>
+     
+        <div class="well">
+          <button type="submit" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-ok"></span> Submit</button>
+        </div>
+      </form>
+
+    </div>
+	</div>
+	
+	<div id="footer">
+	<hr>
+	   <div class="container">
+	      <a class="text-muted" href="impressum.html">impressum.</a>
+	   </div>
+	 </div>
+</div>
+
+
+
+</body>
+
+  <script src="js/libs/jquery-1.10.2.js"></script>
+  
+  <!-- Bootstrap JS file -->
+  <script src="js/bootstrap.min.js"></script>
+  
+  <script src="js/libs/handlebars-1.1.2.js"></script>
+  <script src="js/libs/ember-1.5.0.js"></script>
+  <script src="js/app.js"></script>
+  <!-- to activate the test runner, add the "?test" query string parameter -->
+  <script src="tests/runner.js"></script>
+
+</html>
